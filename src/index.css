@@ -7,10 +7,10 @@ body {
 .card {
   margin: 20px auto;
   width: 220px;
-  padding: 12px;
+  padding: 10px;
   border-radius: 12px;
   background: white;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
