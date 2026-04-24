@@ -1,4 +1,5 @@
 import { useRandomCard } from "./hooks/useRandomCard";
+import Card from "./components/Card";
 
 function App() {
   const { card, generateCard } = useRandomCard();
@@ -7,14 +8,9 @@ function App() {
     <div>
       <h1>BTS Photocard 💜</h1>
 
-      <button onClick={generateCard}>Gerar Photocard</button>
+      <Card card={card} />
 
-      {card && (
-        <div>
-          <img src={card.image} alt={card.name} width="200" />
-          <p>{card.name}</p>
-        </div>
-      )}
+      <button onClick={generateCard}>Gerar Photocard</button>
     </div>
   );
 }
